@@ -126,14 +126,9 @@ var cardButtonCallback = function(t){
     };
   });
 
-  return t.popup({
-    title: 'Popup Search Example',
-    items: items,
-    search: {
-      count: 5,
-      placeholder: 'Search National Parks',
-      empty: 'No parks found'
-    }
+  return t.attach({
+    name:'Rally Data',
+    url: './rally-data.html'
   });
 };
 
