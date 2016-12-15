@@ -1,0 +1,17 @@
+{
+  "name": "trally",
+  "version": "0.2.1",
+  "description": "Trello Power UP",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ckim06/power-up-template.git"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "lodash": "^3.7.0",
+    "q": "^1.2.0",
+    "rally": "^0.2.0",
+    "request": "^2.55.0"
+  }
+}
