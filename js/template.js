@@ -126,8 +126,8 @@ var cardButtonCallback = function(t){
     };
   });
 
-  return t.attach({
-    name:'Rally Data',
+  return t.popup({
+    title: 'Rally Data',
     url: './rally-data.html'
   });
 };
