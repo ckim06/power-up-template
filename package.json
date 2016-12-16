@@ -1,8 +1,7 @@
 {
-  "name": "trally",
+  "name": "trellopowerup",
   "version": "0.2.1",
   "description": "Trello Power UP",
-  "main": "index.html",
   "repository": {
     "type": "git",
     "url": "git@github.com:ckim06/power-up-template.git"
