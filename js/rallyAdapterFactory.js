@@ -8,7 +8,7 @@ var TICKETS_LIMIT = 100;
 
 function apiSettings(options) {
   return {
-    apiKey: options.apiKey,
+    apiKey: RALLY_API_KEY,
     server: 'https://rally1.rallydev.com'
   }
 }
