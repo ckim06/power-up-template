@@ -1,20 +1,24 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="https://trello.com/power-ups/power-up.css">
-    <link rel="stylesheet" href="./css/overlay.css">
-    <script src="https://trello.com/power-ups/power-up.min.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <form id="rallyData">
-        <ul>
-          <li>
-            <label>Burndown hours</label>
-            <input type="number"></input>
-          </li>
-        </ul>
-        <input type="submit" class="mod-primary" value="Send to Rally"/>
-      </form>
+
+<head>
+  <link rel="stylesheet" href="https://trello.com/power-ups/power-up.css">
+  <link rel="stylesheet" href="./css/overlay.css">
+  <script src="https://trello.com/power-ups/power-up.min.js"></script>
+</head>
+
+<body>
+  <div id="content">
+    <form id="rallyData">
+      <ul>
+        <li>
+          <label>Burndown hours</label>
+          <input id="hours" type="number"></input>
+        </li>
+      </ul>
+      <input id="submit" type="submit" class="mod-primary" value="Send to Rally" />
+    </form>
+    <div id="status"></div>
     <script src="./js/rally-data.js"></script>
-  </body>
+</body>
+
 </html>
