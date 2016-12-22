@@ -17,14 +17,16 @@ var settings = apiSettings({
   apiKey: RALLY_API_KEY
 });
 var restApi = rally(settings);
-app.use(express.static('./'));
-app.use(bodyParser.urlencoded({ extended: true }));
-
-app.use(bodyParser.json());
 app.use(function(req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   return next();
 });
+
+
+app.use(express.static('./'));
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(bodyParser.json());
 
 
 router.route('/defect')
