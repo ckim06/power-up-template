@@ -197,7 +197,7 @@ TrelloPowerUp.initialize({
   'card-buttons': function(t, options) {
     return [{
       icon: GRAY_ICON,
-      text: 'Template',
+      text: 'Update Rally',
       callback: cardButtonCallback
     }];
   },

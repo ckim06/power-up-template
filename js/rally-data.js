@@ -4,8 +4,9 @@ var t = TrelloPowerUp.iframe();
 rallyForm.onsubmit = function () {
   t.card('name').then(nameCallback, handleError);
 
-  function nameCallback(title) {
-    var id = title.split('—')[0].trim();
+  function nameCallback(data) {
+    // emdash
+    var id = data.name.split('—')[0].trim();
 
     var data = {
       _ref: id,
