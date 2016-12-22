@@ -10,7 +10,7 @@ rallyForm.onsubmit = function () {
 
     var data = {
       _ref: id,
-      Actuals: document.getElementById('hours')
+      Actuals: document.getElementById('hours').value;
     };
 
     var xmlhttp = new XMLHttpRequest(); // new HttpRequest instance
