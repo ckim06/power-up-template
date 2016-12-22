@@ -19,7 +19,7 @@ rallyForm.onsubmit = function () {
     xmlhttp.onload = function (response) {
       document.getElementById('status').innerHTML = 'Saved to Rally';
     };
-    xmlhttp.send(data);
+    xmlhttp.send(JSON.stringify(data));
   }
 
   function handleError(err){
