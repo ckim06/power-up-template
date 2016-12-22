@@ -21,7 +21,10 @@ app.use(express.static('./'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(bodyParser.json());
-
+app.use(function(req, res, next) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  return next();
+});
 router.use(function (req, res, next) {
   // do logging
   console.log('Something is happening.');
