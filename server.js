@@ -25,11 +25,7 @@ app.use(function(req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   return next();
 });
-router.use(function (req, res, next) {
-  // do logging
-  console.log('Something is happening.');
-  next();
-});
+
 router.route('/defect')
   .put(function (req, res) {
     restApi.update({
