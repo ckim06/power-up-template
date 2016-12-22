@@ -1,1 +1,0 @@
-var RALLY_API_KEY = '_lipBuGakRCSLETr9nHB0XLFtMSFQU0LwtP2t3TupvvQ';
