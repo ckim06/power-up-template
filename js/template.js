@@ -204,13 +204,13 @@ TrelloPowerUp.initialize({
   'card-badges': function(t, options){
     return getBadges(t);
   },
-  'card-buttons': function(t, options) {
-    return [{
-      icon: GRAY_ICON,
-      text: 'Update Rally',
-      callback: cardButtonCallback
-    }];
-  },
+  // 'card-buttons': function(t, options) {
+  //   return [{
+  //     icon: GRAY_ICON,
+  //     text: 'Update Rally',
+  //     callback: cardButtonCallback
+  //   }];
+  // },
   'card-detail-badges': function(t, options) {
     return getBadges(t);
   },
