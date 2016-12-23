@@ -136,13 +136,12 @@ TrelloPowerUp.initialize({
   'attachment-sections': function(t, options){
 
       return [{
-        id: 'Task Hours',
+        id: 'hours',
         icon: GRAY_ICON,
         title: 'Hours',
         content: {
           type: 'iframe',
-          url: t.signUrl('./rally-data.html', { arg: 'you can pass your section args here' }),
-          height: 230
+          url: t.signUrl('./rally-data.html', { arg: 'you can pass your section args here' })
         }
       }];
     // // options.entries is a list of the attachments for this card
