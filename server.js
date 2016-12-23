@@ -31,19 +31,21 @@ app.use(bodyParser.json());
 
 router.route('/defect')
   .put(function (req, res) {
-    restApi.update({
+    var data = {
       ref: {
         _ref: req.body._ref
-      }, //may be a ref ('/defect/1234') or an object with a _ref property
+      },
       data: {
         Actuals: req.body.Actuals
       },
-      fetch: ['FormattedID', 'Name', 'Actuals'], //fields to fetch
+      fetch: ['FormattedID', 'Name', 'Actuals'],
 
-      requestOptions: {} //optional additional options to pass through to request
-    }, function (error, result) {
+      requestOptions: {}
+    };
+
+    restApi.update(data, function (error, result) {
       if (error) {
-        console.log('error', error);
+        res.json(error);
       } else {
         res.json(result.Object);
       }
