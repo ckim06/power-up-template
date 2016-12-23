@@ -139,6 +139,9 @@ TrelloPowerUp.initialize({
         id: 'hours',
         icon: GRAY_ICON,
         title: 'Hours',
+        claimed:[
+          'https://power-up-trello.herokuapp.com/rally-data.html'
+        ],
         content: {
           type: 'iframe',
           url: t.signUrl('./rally-data.html', { arg: 'you can pass your section args here' })
